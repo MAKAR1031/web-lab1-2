@@ -10,7 +10,6 @@ export const load = () => dispatch => {
             data: res.data
         })
     }).catch(() => {
-        console.log("here");
         dispatch({
             type: 'TODO_LOADING_ERROR'
         });
