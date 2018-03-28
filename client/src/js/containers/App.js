@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 import TodoList from '../components/TodoList';
 import TodoInput from '../components/TodoInput';
 import TodoCounter from '../components/TodoCounter';
+import Task from '../components/TaskComponent';
 
 class App extends Component {
     render() {
@@ -16,6 +17,7 @@ class App extends Component {
                         <TodoCounter/>
                         <div>
                             <Route exact path="/" component={TodoList}/>
+                            <Route path="/task/:id" component={Task}/>
                             <Route path="/add" component={TodoInput}/>
                         </div>
                     </div>

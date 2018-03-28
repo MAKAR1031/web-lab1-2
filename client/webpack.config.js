@@ -31,6 +31,7 @@ module.exports = {
         new ExtractTextPlugin('css/style.css')
     ],
     devServer: {
-        contentBase: __dirname + '/public'
+        contentBase: __dirname + '/public',
+        historyApiFallback: true
     }
 };
