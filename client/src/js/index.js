@@ -6,13 +6,14 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 import {applyMiddleware, createStore} from 'redux';
+import {composeWithDevTools} from 'redux-devtools-extension'
 
 import App from './containers/App';
 import reducer from './reducers';
 
 const store = createStore(
     reducer,
-    applyMiddleware(thunk)
+    composeWithDevTools(applyMiddleware(thunk))
 );
 
 ReactDOM.render(
