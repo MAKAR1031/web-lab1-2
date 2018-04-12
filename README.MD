@@ -8,7 +8,7 @@
 
 ### Настройка ###
 1. [serverConfig](server/serverConfig.json) содержит настройки порта сервера и настройки [cors](https://github.com/expressjs/cors#usage).
-1. [config](client/src/js/api/config.json) содержит настройку базовога адреса сервека, к которому обращается клиентская часть
+1. [config](client/src/js/api/config.json) содержит настройку базового адреса сервека, к которому обращается клиентская часть
 
 ### Установка и запуск ###
 1. Выполнить команду `npm install` в директориях **client**, **server**.
